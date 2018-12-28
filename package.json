@@ -1,6 +1,6 @@
 {
   "name": "@fnando/json_blob",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Load `<script type=\"application/json;base64\">` tags. You can then use <https://github.com/fnando/json_blob> to generate this data on the server-side.",
   "main": "dist/json_blob.js",
   "module": "dist/json_blob.commonjs2.js",
