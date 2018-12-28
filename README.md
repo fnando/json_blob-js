@@ -1,5 +1,6 @@
 # @fnando/json_blob
 
+[![Travis-CI](https://travis-ci.org/fnando/json_blob-js.svg)](https://travis-ci.org/fnando/json_blob-js)
 [![NPM package version](https://img.shields.io/npm/v/@fnando/json_blob.svg)](https://www.npmjs.com/package/@fnando/json_blob)
 ![License: MIT](https://img.shields.io/npm/l/@fnando/json_blob.svg)
 ![Minified size](http://img.badgesize.io/fnando/json_blob-js/master/dist/json_blob.js.svg?label=min+size)
