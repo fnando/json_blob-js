@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+    User name: <strong id="name">loading</strong>
+  </p>
+
+  <!-- Load json_blob. -->
+  <script src="../dist/json_blob.js"></script>
+
+  <!-- Define the encoded user data -->
+  <script data-name="user" type="application/json;base64">eyJuYW1lIjoiSm9obiBEb2UifQ==</script>
+
+  <script>
+    // Decode user data. `user` matches the attribute `data-name`.
+    const user = jsonBlob.load("user");
+
+    // Set the user's name.
+    document.querySelector("#name").textContent = user.name;
+  </script>
+</body>
+</html>
