@@ -1,7 +1,7 @@
 import assert from "assert";
 import { JSDOM } from "jsdom";
 
-import { load, dump, parse } from "../src/json_blob";
+import jsonBlob, { load, dump, parse } from "../src/json_blob";
 
 suite("json_blob", () => {
   setup(() => {
@@ -88,5 +88,11 @@ suite("json_blob", () => {
   test("returns default value when DOM doesn't exist", () => {
     assert.equal(load("missing"), null);
     assert.equal(load("missing", {defaultValue: "DEFAULT"}), "DEFAULT");
+  });
+
+  test("exports default module", () => {
+    assert.equal(jsonBlob.dump, dump);
+    assert.equal(jsonBlob.load, load);
+    assert.equal(jsonBlob.parse, parse);
   });
 });

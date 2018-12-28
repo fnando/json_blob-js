@@ -17,3 +17,6 @@ export function load(name, options = {}) {
 
   return parse(element.innerHTML, jsonEngine);
 }
+
+const jsonBlob = {dump, parse, load};
+export default jsonBlob;
